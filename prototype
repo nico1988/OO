@@ -1,5 +1,6 @@
 //sth about prototype
 function Person(){};
+var p1 = new Person();
 Person.prototype = {
   constructor:Person,
   name:"nico",
@@ -8,5 +9,4 @@ Person.prototype = {
     alert("message");
   }
 };
-var p1 = new Person();
 p1.sayHi();//Uncaught TypeError: p1.sayHi is not a function
